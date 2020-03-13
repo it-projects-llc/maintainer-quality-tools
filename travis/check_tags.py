@@ -19,6 +19,7 @@ def get_errors_msgs_commits(travis_repo_slug, travis_pull_request_number, travis
     #GET /repos/:owner/:repo/pulls/:pull_number/commits
     #See API Github: https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository
     real_errors = {}
+    return {}  # disable checks
     if not travis_pull_request_number or travis_pull_request_number == "false":
         return real_errors
     # GET / repos /: owner /:repo / commits
